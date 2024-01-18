@@ -1,0 +1,90 @@
+body{
+    justify-content: center;
+    background-color: #e5e5e5;
+}
+header{
+    background-color: #e5e5e5;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+}
+main{
+    background-color: #e5e5e5;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+/* Custom css for bootstrap table*/
+
+.table{
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+    width: 70%; 
+}
+#table-headers{
+    font-weight: 500;
+    background-color: #fca311;
+}
+
+/* Alternating row colors */
+.table tbody tr:nth-child(even) {
+    background-color: #97bade;
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background-color: #97bade;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #0d5094; 
+}
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+.table .thead-dark th {
+    color: #fff;
+    background-color: #343a40; /* Dark header background color */
+}
+article{
+    flex-direction: column;
+    padding: 50px;
+}
+.cont{
+    background-color: #fca311;
+    margin: 20px;
+    color: #14213d;
+}
+.cont1{
+    background-color: #14213d;
+    margin: 20px;
+    color: #fca311;
+}
+.main-nav{
+    font-weight: bold;
+    background-color: #e5e5e5;
+}
+.main-nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.main-nav ul li{
+    padding: 20px;
+}
+#side-box{
+    display: flex;
+    height: 100vh;
+    max-width: 150px;
+}
+#main-box{
+    display: flex;
+    flex: auto;
+    padding: 30px;
+    width: auto;
+}
+footer p{
+    padding: 30px;
+    margin: 10px;
+}
