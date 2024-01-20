@@ -1,99 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/test-style.css">
-    
-    <title>HTML Layout - Exercise 5</title>
-
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="Linda Marin" name="author">
+	<meta content="Exercise .html code for HAMK course, including bootstrap and flexbos as well as css." name="description">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/style-5.css" rel="stylesheet">
+	<title>HTML Layout - Exercise 5</title>
 </head>
 <body>
-    <header>
-        <h1>HTML Layout With Flexbox</h1>
-    </header>
-    <section>
-        <table class="table">
-            <thead>
-              <tr class="tbody">
-                <th scope="col">ID</th>
-                <th scope="col">Fname</th>
-                <th scope="col">Lname</th>
-                <th scope="col">City</th>
-                <th scope="col">F/M</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Caroline</td>
-                <td>Schmidt</td>
-                <td>Hämeenlinna</td>
-                <td>F</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Autumn</td>
-                <td>Fernandez</td>
-                <td>Tampere</td>
-                <td>F</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Derek</td>
-                <td>Everett</td>
-                <td>Helsinki</td>
-                <td>M</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Walter</td>
-                <td>Payne</td>
-                <td>Espoo</td>
-                <td>M</td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>Jessie</td>
-                <td>Mcdaniel</td>
-                <td>Rovaniemi</td>
-                <td>F</td>
-              </tr>
-            </tbody>
-          </table>
-    </section>
-    <section id="main-box">
-        <aside class="main-nav">
-            <nav>
-                <ul>
-                    <li>Page1</li>
-                    <li>Page2</li>
-                    <li>Page3</li>
-                    <li>Page4</li>
-                </ul>
-            </nav>
-        </aside>
-        <main>
-            <article class="cont">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ea blanditiis odio necessitatibus rem quisquam inventore nam! Sapiente, quos ipsum quasi quis expedita fuga atque error quod. perferendis iste pariatur!     
-            </article>
-            <article class="cont1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sapiente quisquam modi magnam explicabo quasi dicta perspiciatis quos illum, necessitatibus voluptatem minus culpa quidem. Magni, consectetur cupiditate. Ipsum, soluta vitae.
-            </article>
-            <article class="cont1">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum totam nesciunt iusto consectetur ducimus explicabo possimus inventore maxime quisquam repellendus saepe, dolore illum vero laborum distinctio dolorem, maiores asperiores nobis.
-            </article>
-        </main>
-    </section>
-
-    <footer>
-        <p class="cont">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptatum tempore iure accusamus. Quos eum optio quod voluptatibus, illum a nostrum ipsum distinctio nihil maxime qui, ex rem animi sequi!
-        </p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<header>
+		<h1>HTML Layout With Flexbox</h1>
+	</header>
+	<div id="main-box">
+		<aside class="main-nav">
+			<nav>
+				<ul>
+					<li>Page1</li>
+					<li>Page2</li>
+					<li>Page3</li>
+					<li>Page4</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="side-box">
+			<article class="cont">
+				<h2>Article 1</h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ea blanditiis odio necessitatibus rem quisquam inventore nam! Sapiente, quos ipsum quasi quis expedita fuga atque error quod. perferendis iste pariatur!
+			</article>
+			<article class="cont1">
+				<h2>Article 2</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sapiente quisquam modi magnam explicabo quasi dicta perspiciatis quos illum, necessitatibus voluptatem minus culpa quidem. Magni, consectetur cupiditate. Ipsum, soluta vitae.
+			</article>
+			<article class="cont1">
+				<h2>Article 3</h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum totam nesciunt iusto consectetur ducimus explicabo possimus inventore maxime quisquam repellendus saepe, dolore illum vero laborum distinctio dolorem, maiores asperiores nobis.
+			</article>
+		</main>
+	</div>
+	<table class="table">
+		<thead>
+			<tr class="tbody">
+				<th scope="col">ID</th>
+				<th scope="col">Fname</th>
+				<th scope="col">Lname</th>
+				<th scope="col">City</th>
+				<th scope="col">F/M</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>Caroline</td>
+				<td>Schmidt</td>
+				<td>Hämeenlinna</td>
+				<td>F</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Autumn</td>
+				<td>Fernandez</td>
+				<td>Tampere</td>
+				<td>F</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>Derek</td>
+				<td>Everett</td>
+				<td>Helsinki</td>
+				<td>M</td>
+			</tr>
+			<tr>
+				<th scope="row">4</th>
+				<td>Walter</td>
+				<td>Payne</td>
+				<td>Espoo</td>
+				<td>M</td>
+			</tr>
+			<tr>
+				<th scope="row">5</th>
+				<td>Jessie</td>
+				<td>Mcdaniel</td>
+				<td>Rovaniemi</td>
+				<td>F</td>
+			</tr>
+		</tbody>
+	</table>
+	<form style="padding: 7%;">
+		<div class="mb-3">
+			<label class="form-label" for="name">First and last name</label><br>
+			<input class="form-control" id="name" style="margin-bottom: 2%;" type="text"> <input class="form-control" type="text">
+		</div>
+		<div class="mb-3" style="padding-top: 5%;">
+			<label class="form-label" for="exampleInputEmail1">Email address</label> <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail1" type="email">
+			<div class="form-text" id="emailHelp">
+				We'll never share your email with anyone else.
+			</div>
+		</div><button class="btn btn-primary" style="background-color: #9d9d40; border-color: #e3e368;" type="submit">Submit</button>
+	</form>
+	<footer>
+		<p class="cont">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptatum tempore iure accusamus. Quos eum optio quod voluptatibus, illum a nostrum ipsum distinctio nihil maxime qui, ex rem animi sequi!</p>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+	</script>
 </body>
 </html>
-
